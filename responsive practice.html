@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Responsive practice</title>
+		<link href="responsive.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<header>
+		<div id="logo">
+			<h1>Makeup by Fran</h1>
+		</div>
+			<nav>
+				
+					<span><a href="/html/">Home</a> |
+					<a href="/css/">Gallery</a> |
+					<a href="/js/">Packages</a> |
+						<a href="/jquery/">Contact</a></span>
+			
+			</nav>
+		</header>
+		
+		<main>
+			<article id="background_image">
+			<img src="ASSETS/background.jpg">
+			</article>
+			<div id="content">
+			<article id="bio" class="has_2_col">
+				<center><h1 id="smaller_show">I am Fran</h1></center><!--shows above headshot when screen size less than 620px-->
+				<section class="two_col_1">
+					<img id="headshot" src="ASSETS/Fran headshot ellipse.png">
+				</section>
+				<section class="two_col_2">
+				<h1 id="smaller_hide">I am Fran</h1>
+					<p>
+					In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns. The six column grid provides you with more options and opportunities to fine tune smaller details. If you are working on a content-rich site and need to park a lot of information, a six column grid could be a smart starting point for experimentation. Since it maybe an advanced grid, I would maybe not recommend starting out with it on your first rodeo.
+					</p>
+				</section>
+			</article>
+			<hr>
+			<article id="selling_points" class="has_3_col">
+				<h1><center>Why Choose Fran?</center></h1>
+				<section class="three_col_1">
+					<p>In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns. The six column grid provides you with more options and opportunities to fine tune smaller details. If you are working on a content-rich site and need to park a lot of information, a six column grid could be a smart starting point for experimentation. Since it maybe an advanced grid, I would maybe not recommend starting out with it on your first rodeo.</p>
+				</section>
+				<section class="three_col_2">
+					<p>In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns. The six column grid provides you with more options and opportunities to fine tune smaller details. If you are working on a content-rich site and need to park a lot of information, a six column grid could be a smart starting point for experimentation. Since it maybe an advanced grid, I would maybe not recommend starting out with it on your first rodeo.</p>
+				</section>
+				<section class="three_col_3">
+					<p>In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns. The six column grid provides you with more options and opportunities to fine tune smaller details. If you are working on a content-rich site and need to park a lot of information, a six column grid could be a smart starting point for experimentation. Since it maybe an advanced grid, I would maybe not recommend starting out with it on your first rodeo.</p>
+				</section>
+			</article>
+			<hr>
+			<article id="slideshow">
+			
+				<div class="slideshow-container">
+					<a href="https://www.w3schools.com/html/html_images.asp">
+						<div class="mySlides fade">
+
+							<img src="ASSETS/slideshow/slideshow_1.jpg" style="width:100%">
+
+						</div>
+
+						<div class="mySlides fade">
+							<img src="ASSETS/slideshow/slideshow_2.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides fade">
+							<img src="ASSETS/slideshow/slideshow_3.jpg" style="width:100%">
+						</div>
+					</a>
+				</div>
+				<br>
+
+				<div style="text-align:center">
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+				</div>
+				<script>
+					var slideIndex = 0;
+					showSlides();
+
+					function showSlides() {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+				
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";  
+						}
+				
+						slideIndex++;
+				
+						if (slideIndex > slides.length) {
+							slideIndex = 1
+						}   
+				
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+				
+						slides[slideIndex-1].style.display = "block";  
+						dots[slideIndex-1].className += " active";
+						setTimeout(showSlides, 2000); // Change image every 2 seconds
+				}
+			</script>----------------------------------------------------------------------------------------->
+			</article>
+			<hr>
+			
+			<article id="reviews" class="has_3_col">
+			<center><h1>Testimonials</h1></center>
+				<section class="three_col_1">
+					<div class="information">
+						<div class="review-information">
+							<center>
+								<div class="review-picture">
+									<img src="ASSETS/review-headshot.gif.gif"/>
+								</div>
+							</center>
+							<h6 class="review-name">
+								John Doe
+							</h6>
+
+							<p class="review-date">
+								December 1, 2017
+							</p>	
+						</div>
+					</div>
+					
+					<p>
+						<span class="quote">&ldquo;</span> In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns.<span class="quote">&rdquo;</span>
+						
+					</p>
+					
+			  </section>
+				
+				<section class="three_col_2">
+					<div class="information">
+						<div class="review-information">
+							<center>
+								<div class="review-picture">
+									<img src="ASSETS/review-headshot.gif.gif"/>
+								</div>
+							</center>
+
+							<h6 class="review-name">
+								John Doe
+							</h6>
+
+							<p class="review-date">
+								December 1, 2017
+							</p>	
+						</div>
+					</div>
+					<p>
+						<span class="quote">&ldquo;</span> In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns.<span class="quote">&rdquo;</span>
+					</p>
+				</section>
+				
+				<section class="three_col_3">
+					<div class="information">
+						<div class="review-information">
+							<center>
+								<div class="review-picture">
+									<img src="ASSETS/review-headshot.gif.gif"/>
+								</div>
+							</center>
+
+							<h6 class="review-name">
+								John Doe
+							</h6>
+
+							<p class="review-date">
+								December 1, 2017
+							</p>	
+						</div>
+					</div>
+					<p>
+						<span class="quote">&ldquo;</span> In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns.<span class="quote">&rdquo;</span>
+					</p>
+				</section>
+				
+			</article>
+			<hr>
+			<article id="package_button">
+			<center>
+				<button>
+			
+					<input class="link-button" type="button" value="View Packages" onclick=""/>
+				
+				</button>
+			</center>
+				
+			</article>
+			<article id="badges">
+				<img src="ASSETS/badge_display_temp.gif">
+			</article>
+		</div>
+		</main>
+		
+		<footer>
+			<center>
+				<span>
+					
+						<a>Contact</a>
+						<a>Contact</a>
+						<a>Contact</a>
+					
+					
+
+				</span>
+			</center>
+		</footer>
+	</body>
+</html>

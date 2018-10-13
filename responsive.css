@@ -66,7 +66,7 @@ header{
 	
 	
 }
-.dropdown-menu{
+.dropdown-menu-custom{
 	display:none;
 	
 }
@@ -340,10 +340,10 @@ footer a{
 	
 	}	
 	
-	.dropdown-menu{
+	.dropdown-menu-custom{
 	display:none;
 	background-color:0,0,0,0;
-	
+	overflow:visible;
 	}
 	
 	nav span{

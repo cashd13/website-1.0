@@ -8,7 +8,43 @@
 	</head>
 
 	<body>
+	
 		<header>
+			<div id="normal-container">
+				<div id="logo">
+					<h1>Logo</h1>
+				</div>
+				
+				<nav>
+					<span>
+						<a href="/html/">Home1</a> |
+						<a href="/css/">Gallery1</a> |
+						<a href="/js/">Packages1</a> |
+						<a href="/jquery/">Contact1</a>
+					</span>
+				</nav>
+				
+				<div id="dropdown-button-container">
+					<button id="dropdown-button" type="button"></button>
+				</div>
+			</div>
+		
+			<div class="dropdown-menu">
+				<center>
+					<h4 class="dropdown-nav"<a href="#">Home2</a></h4>
+					<h4 class="dropdown-nav"><a href="#">Gallery2</a></h4>
+					<h4 class="dropdown-nav"><a href="#">Contact2</a></h4>
+				</center>
+				
+			</div>
+			<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+					integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+					crossorigin="anonymous">
+			</script> 
+
+			<script src='main.js'></script> 
+		</header>
+		<!--<header>
 		<div id="logo">
 			<h1>Makeup by Fran</h1>
 		</div>
@@ -20,7 +56,7 @@
 						<a href="/jquery/">Contact</a></span>
 			
 			</nav>
-		</header>
+		</header>-->
 		
 		<main>
 			<article id="background_image">
@@ -82,7 +118,6 @@
 				<script>
 					var slideIndex = 0;
 					showSlides();
-
 					function showSlides() {
 						var i;
 						var slides = document.getElementsByClassName("mySlides");
@@ -185,11 +220,11 @@
 				
 			</article>
 			<hr>
-			<article id="package_button">
+			<article id="contact-button-container">
 			<center>
-				<button>
+				<button id="contact-button">
 			
-					<input class="link-button" type="button" value="View Packages" onclick=""/>
+					<input class="link-button" type="button" value="Contact Now" onclick=""/>
 				
 				</button>
 			</center>

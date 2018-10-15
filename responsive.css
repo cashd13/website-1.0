@@ -318,10 +318,7 @@ footer a{
 		font-size: 25px;
 		float: none;
 	}
-	nav span{
-		float: none;
-		display: none;
-	}
+	
 	#dropdown-button{
 		background-color:255,255,255;
 		display:inline;
@@ -360,7 +357,7 @@ footer a{
 	}
 	
 	nav span{
-		float: none;
+		
 		display: none;
 	}
 	nav a{

@@ -1,0 +1,32 @@
+@media only screen and (max-width:620px){
+	div#logo{
+		width:100%;
+		text-align:center;
+		height:auto;
+		
+	}
+	nav{
+		float:none !important;
+	}
+	div#logo h1{
+		font-size:35px;
+		text-align:center;
+	}
+	nav span{
+		
+		display: inline !important;
+		margin-top:0px !important;
+		overflow:show;
+	}
+	nav span a{
+		font-size:15px;
+	}
+	button#dropdown-button{
+		display:none;
+	}
+	div#dropdown-button-container{
+		display:none;
+		width:0px;
+	}
+	
+}

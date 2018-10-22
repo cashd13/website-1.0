@@ -1,17 +1,28 @@
 
 $('#dropdown-button').on('click', () => {
 	
-	$('.dropdown-menu-custom').slideToggle("slow");
+	$('.nav-container').slideToggle("slow");
 	
 });
 
-$(window).resize(function() {
+/*$(window).resize(function() {
 	var width=$(window).width();
 	if(width >= 620){
 		
-		var isVisible=$('.dropdown-menu-custom').is(':visible');
+		var isVisible=$('nav').is(':visible');
 		if(isVisible===true){
-			$('.dropdown-menu-custom').toggle();
+			$('nav').toggle();
 		}
 	}
 });
+*/
+$(window).resize(function(){
+	var width=$(window).width();
+	var isVisible=$('.nav-container').is(':visible');
+	if(!isVisible){
+		if( (width >=620)){
+			$('.nav-container').toggle();
+		}
+	}
+})
+//working on getting nav to apear after activating the drop-down menu and deactivating it

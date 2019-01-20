@@ -1,0 +1,22 @@
+{% extends 'website-1.0/skeleton.html' %}
+    {% block content %}
+    <main>
+        <div id='content'>
+            {% for form in forms %}
+                {% if form.Meta.classname == 'ClientReviewForm' %}
+                <form action="{% url 'reviews' %}" method="POST">
+                    {% csrf_token %}
+                    {{ form }}
+                    <input class='link-button' type='submit' value='Post!'>
+                    <input type='hidden' name='form_type' value='client_review_form'>
+                </form>
+                {% endif %}
+            {% endfor %}
+            {% for review in reviews %}
+                <h3>{{ review.summary }}</h3>
+                <h4>{{ review.client_name }} on {{ review.posted }}</h4>
+                <p>{{ review.body }}</p>
+            {% endfor %}
+        </div>
+    </main>
+    {% endblock %}

@@ -1,99 +1,31 @@
-<!doctype html>
-<html>
-
-<noscript>
-		<link href="CSS/java-disabled.css" type="text/css" rel="stylesheet">
-	</noscript>
-	<head>
-		 <meta charset="utf-8">
-		 <meta name="viewport" content="width=device-width, initial-scale=1">
-		 <title>Responsive practice</title>
-		 <link href="CSS/responsive.css" rel="stylesheet" type="text/css">
-		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		 
-		 <link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css">
-		 <script type="text/javascript" src="Javascript/lightbox-plus-jquery.min.js"></script>
-	</head>
-	
-	<body>
-	
-		<header>
-			
-			
-			<div id="logo">
-				<h1>Logo</h1>
-			</div>
-			
-			<div class="nav-container">
-				<nav>
-					<a href="index.html">Home</a> <span class="bar">|</span> 
-					<a class="active" href="gallery.html">Gallery</a> <span class="bar">|</span>
-					<a href="services.html">Services</a> <span class="bar">|</span>
-					<a href="contact.html">Contact</a>
-				</nav>
-				
-			</div>
-			
-				
-			<div id="dropdown-button-container">
-				<button id="dropdown-button" type="button"></button>
-			</div>
-			
-			
-		
-			
-			<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-					integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-					crossorigin="anonymous">
-			</script> 
-
-			<script src='Javascript/main.js'></script> 
-		</header>
-		
+{% extends 'website-1.0/skeleton.html' %}
+{% load staticfiles %}
+	{% block content %}
 		<main>
 			<div id="content">
 				<div class="gallery">
-					<a href="ASSETS/gallery/gallery_large (1).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (1).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (2).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (2).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (3).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (3).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (4).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (4).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (5).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (5).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (6).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (6).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (7).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (7).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (8).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (8).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (9).jpg" data-lightbox="mygallery"> <img src="ASSETS/gallery/thumnail/gallery_small (9).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (10).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (10).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (11).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (11).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (12).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (12).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (13).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (13).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (14).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (14).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (15).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (15).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (16).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (16).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (17).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (17).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (18).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (18).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (19).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (19).jpg"></a>
-					<a href="ASSETS/gallery/gallery_large (20).jpg" data-lightbox="mygallery"><img src="ASSETS/gallery/thumnail/gallery_small (20).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (1).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (1).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (2).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (2).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (3).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (3).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (4).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (4).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (5).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (5).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (6).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (6).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (7).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (7).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (8).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (8).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (9).jpg" data-lightbox="mygallery"> <img src="/static/ASSETS/gallery/thumnail/gallery_small (9).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (10).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (10).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (11).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (11).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (12).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (12).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (13).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (13).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (14).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (14).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (15).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (15).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (16).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (16).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (17).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (17).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (18).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (18).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (19).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (19).jpg"></a>
+					<a href="/static/ASSETS/gallery/gallery_large (20).jpg" data-lightbox="mygallery"><img src="/static/ASSETS/gallery/thumnail/gallery_small (20).jpg"></a>
 					
 				</div>
 			</div>
 		</main>
-		
-		<footer>
-			<center>
-				<span>
-					
-						<a>Contact</a>
-						<a>Contact</a>
-						<a>Contact</a>
-					
-					
-
-				</span>
-			</center>
-		</footer>
-		
-		
-	</body>
-</html>
+	{% endblock %}

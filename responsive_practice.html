@@ -1,0 +1,169 @@
+<!doctype html>
+{% extends 'website-1.0/skeleton.html' %}
+{% load staticfiles %}
+	{% block content %}	
+		<main>
+			<article id="background_image">
+				<img src="/static/ASSETS/background.jpg">
+			</article>
+			<div id="content">
+				<article id="bio" class="has_2_col">
+					<center>
+						<h1 id="smaller_show">I am Fran</h1>
+					</center><!--shows above headshot when screen size less than 620px-->
+					<section class="two_col_1">
+						<img id="headshot" src="/static/ASSETS/Fran headshot ellipse.png">
+					</section>
+					<section class="two_col_2">
+						<h1 id="smaller_hide">I am Fran</h1>
+						<p>
+						In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns. The six column grid provides you with more options and opportunities to fine tune smaller details. If you are working on a content-rich site and need to park a lot of information, a six column grid could be a smart starting point for experimentation. Since it maybe an advanced grid, I would maybe not recommend starting out with it on your first rodeo.
+						</p>
+					</section>
+				</article>
+				<hr>
+				<article id="selling_points" class="has_3_col">
+					<h1 class="center">Why Choose Fran?</h1>
+					<section class="three_col_1">
+						<p>In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns. The six column grid provides you with more options and opportunities to fine tune smaller details. If you are working on a content-rich site and need to park a lot of information, a six column grid could be a smart starting point for experimentation. Since it maybe an advanced grid, I would maybe not recommend starting out with it on your first rodeo.</p>
+					</section>
+					<section class="three_col_2">
+						<p>In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns. The six column grid provides you with more options and opportunities to fine tune smaller details. If you are working on a content-rich site and need to park a lot of information, a six column grid could be a smart starting point for experimentation. Since it maybe an advanced grid, I would maybe not recommend starting out with it on your first rodeo.</p>
+					</section>
+					<section class="three_col_3">
+						<p>In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns. The six column grid provides you with more options and opportunities to fine tune smaller details. If you are working on a content-rich site and need to park a lot of information, a six column grid could be a smart starting point for experimentation. Since it maybe an advanced grid, I would maybe not recommend starting out with it on your first rodeo.</p>
+					</section>
+				</article>
+				<hr>
+				<article id="slideshow">
+			
+		
+					<div id="myCarousel" class="carousel slide" data-ride="carousel" style="z-index:0px;">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+					
+						  <div class="item active">
+							<img src="/static/ASSETS/background.jpg" alt="Los Angeles" style="width:100%; ">
+						  </div>
+
+						  <div class="item">
+							<img src="/static/ASSETS/background.jpg" alt="Chicago" style="width:100%;">
+						  </div>
+						
+						  <div class="item">
+							<img src="/static/ASSETS/background.jpg" alt="New york" style="width:100%;">
+						  </div>
+					  
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						  <span class="glyphicon glyphicon-chevron-left"></span>
+						  <span class="sr-only">Previous</span>
+						</a>
+					
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						  <span class="glyphicon glyphicon-chevron-right"></span>
+						  <span class="sr-only">Next</span>
+						</a>
+				
+					</div>
+				</article>
+				<hr>
+			
+				<article id="reviews" class="has_3_col">
+					<center>
+						<h1>Testimonials</h1>
+					</center>
+					<section class="three_col_1">
+						<div class="information">
+							<div class="review-information">
+								<center>
+									<div class="review-picture">
+										<img src="/static/ASSETS/review-headshot.gif.gif"/>
+									</div>
+								</center>
+								<h6 class="review-name">
+									John Doe
+								</h6>
+
+								<p class="review-date">
+									December 1, 2017
+								</p>	
+							</div>
+						</div>
+					
+						<p>
+							<span class="quote">&ldquo;</span> In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns.<span class="quote">&rdquo;</span>
+						</p>
+					
+					</section>
+				
+					<section class="three_col_2">
+						<div class="information">
+							<div class="review-information">
+								<center>
+									<div class="review-picture">
+										<img src="/static/ASSETS/review-headshot.gif.gif"/>
+									</div>
+								</center>
+
+								<h6 class="review-name">
+									John Doe
+								</h6>
+
+								<p class="review-date">
+									December 1, 2017
+								</p>	
+							</div>
+						</div>
+						<p>
+							<span class="quote">&ldquo;</span> In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns.<span class="quote">&rdquo;</span>
+						</p>
+					</section>
+				
+					<section class="three_col_3">
+						<div class="information">
+							<div class="review-information">
+								<center>
+									<div class="review-picture">
+										<img src="/static/ASSETS/review-headshot.gif.gif"/>
+									</div>
+								</center>
+
+								<h6 class="review-name">
+									John Doe
+								</h6>
+
+								<p class="review-date">
+									December 1, 2017
+								</p>	
+							</div>
+						</div>
+						<p>
+							<span class="quote">&ldquo;</span> In this example each column spans two units, making things a little more challenging than the three column grid. It splits up each column of a three column grid into two further columns.<span class="quote">&rdquo;</span>
+						</p>
+					</section>
+				
+				</article>
+				<hr>
+				<article id="contact-button-container">
+					<center>
+						<button id="contact-button">
+							<input class="link-button" type="button" value="Contact Now"/>
+						</button>
+					</center>
+				</article>
+				<article id="badges">
+					<img src="/static/ASSETS/badge_display_temp.gif">
+				</article>
+			</div>
+		</main>
+	{% endblock %}

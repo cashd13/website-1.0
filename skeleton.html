@@ -1,0 +1,62 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+	<noscript>
+		<link href="/static/CSS/java-disabled.css" type="text/css" rel="stylesheet">
+	</noscript>
+	<head>
+		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <title>Responsive practice</title>
+		 <link href="/static/CSS/responsive.css" rel="stylesheet" type="text/css">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		 <link href="/static/CSS/lightbox.min.css" rel="stylesheet" type="text/css">
+		 <script src="/static/Javascript/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/smartcrop/2.0.3/smartcrop.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+	
+		<header>
+			
+			
+			<div id="logo">
+				<h1>Logo</h1>
+			</div>
+			
+			<div class="nav-container">
+				<nav>
+					<a href="{% url 'home' %}">Home</a> <span class="bar">|</span> 
+					<a href="{% url 'gallery' %}">Gallery</a> <span class="bar">|</span>
+					<a href="{% url 'contact' %}">Contact</a>
+				</nav>
+			</div>
+			<div id="dropdown-button-container">
+				<button id="dropdown-button" type="button"></button>
+			</div>
+			
+			
+		
+			
+			<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+					integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+					crossorigin="anonymous">
+			</script> 
+
+			<script src='/static/Javascript/main.js'></script> 
+		</header>
+		{% block content %}
+		{% endblock %}
+		<footer>
+			<center>
+				<span>	
+						<a href="{% url 'contact' %}">Contact</a>
+						<a href="{% url 'contact' %}">Contact</a>
+						<a href="{% url 'contact' %}">Contact</a>
+				</span>
+			</center>
+		</footer>
+	</body>
+</html>

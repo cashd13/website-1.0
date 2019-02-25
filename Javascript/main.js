@@ -5,17 +5,6 @@ $('#dropdown-button').on('click', () => {
 	
 });
 
-/*$(window).resize(function() {
-	var width=$(window).width();
-	if(width >= 620){
-		
-		var isVisible=$('nav').is(':visible');
-		if(isVisible===true){
-			$('nav').toggle();
-		}
-	}
-});
-*/
 $(window).resize(function(){
 	var width=$(window).width();
 	var isVisible=$('.nav-container').is(':visible');

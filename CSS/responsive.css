@@ -15,7 +15,15 @@
 .center{
 	text-align:center;
 }
-h1{
+html h1{
+	font-size: 47px;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	color: deeppink;
+	
+}
+
+h2{
 	font-size: 47px;
 	margin-top: 0px;
 	margin-bottom: 25px;
@@ -65,6 +73,10 @@ div.nav-container{
 	height:50px;
 	
 }
+
+#menu-icon{
+	height:40px;
+}
 .active{
 	text-decoration:underline;
 }
@@ -85,6 +97,8 @@ nav a{
 	margin;:0px;
 	padding:0px;
 	display:inilne-block;
+	color: deeppink;
+	
 }
 button#dropdown-button  {
   background-color: rgba(255,255,255,1.00);
@@ -115,6 +129,7 @@ button#dropdown-button  {
 nav a:hover{
 	
 	text-decoration: underline;
+	color: lightpink;
 }
 
 
@@ -126,9 +141,14 @@ nav a:hover{
 main{
 	width:100%;
 }
+#content{
+	min-height:1000px;
+}
+
 #content article{
 	margin-bottom: 20px;
 	margin-top: 20px;
+	
 }
 img{
 	max-width: 100%;
@@ -151,11 +171,11 @@ img{
 }
 .two_col_1{
 	float: left;
-	
+	width:50%;
 }
 .two_col_2{
 	float: right;
-	
+	width:50%;
 }
 .three_col_1{
 	float: left;
@@ -258,7 +278,7 @@ p.review-date{
 
 }
 
-input.link-button {
+form.link-button{
 margin-top: 50px;
 margin-bottom: 50px;
 width: 300px;
@@ -274,7 +294,7 @@ border-radius: 20px;
 	
 }
 
-input.link-button:hover {
+form.link-button:hover {
 
 
 border: 2px solid deeppink;/*------------------------------------------------------COLOR---------------------------------*/
@@ -312,7 +332,8 @@ div.gallery img:hover{
 
 footer{
 	height: 100px;
-	background-color: indianred;
+	background-color:gray;
+	
 }
 footer center{
 	margin-top:35px;
@@ -324,6 +345,60 @@ footer a{
 }
 
 
+
+#contact{
+	margin-left:12%;
+	margin-right:12%;
+}	
+
+#phone_number{
+	width:100%;
+	
+}
+input#name{
+	float:left;
+	width:98%;
+}
+input#phone_number{
+	float:right;
+	width:98%;
+	
+}
+input#email{
+	width:100%;
+	
+}
+input, textarea{
+	border-radius: 4px;
+}
+textarea{
+	
+	min-width:100%;
+	min-height:200px;
+	
+}
+input[type=text]{
+	border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+center input[type=submit]{
+	width:100%;
+	height:50px;
+	border: 2px solid deeppink;
+	border-radius: 6px;
+	background-color: white;
+	font-size:20px;
+}
+input[type=submit]:hover {
+ //* background-color:-------------------get darker color*/
+ 
+ border-width:3px;
+}
+div#information div.has_2_col, div#email-container{
+	margin-bottom:10px;
+	
+}
 
 
 @media only screen and (max-width:620px){
@@ -409,6 +484,7 @@ footer a{
 	}
 	#content{
 		margin-top: 10px;
+		margin-top:100px;
 	}
 	
 	#content article section{

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<noscript>
+		<link href="/static/CSS/java-disabled.css" type="text/css" rel="stylesheet">
+	</noscript>
+	<head>
+		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <title>Responsive practice</title>
+		 <link href="CSS/responsive.css" rel="stylesheet" type="text/css">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+	
+		<header><!--add django-->
+			
+			
+			<div id="logo">
+				<h1>Logo</h1>
+			</div>
+			
+			<div class="nav-container">
+				<nav>
+					<a href="index.html">Home</a> <span class="bar">|</span> 
+					<a href="gallery.html">Gallery</a> <span class="bar">|</span>
+					<a class="active" href="services.html">Services</a> <span class="bar">|</span>
+					<a href="contact.html">Contact</a>
+				</nav>
+				
+			</div>
+			
+				
+			<div id="dropdown-button-container">
+				<button id="dropdown-button" type="button"></button>
+			</div>
+			
+			
+		
+			
+			<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+					integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+					crossorigin="anonymous">
+			</script> 
+
+			<script src='/static/Javascript/main.js'></script> 
+		</header>
+		
+		<main>
+			<div id="content">
+				
+				<article id="contact">
+				<center><h1>Contact</h1></center>
+					<form method="POST">
+						<input type="hidden" name="form_type" value="client_inquiry_form">
+							<div id="information">
+								<div class="has_2_col">
+									<div id="name_container" class="two_col_1">
+										<input id="name" type="text" name="name" placeholder="Name">
+									</div>
+								
+									<div id="phone-number-container" class="two_col_2">
+										<input id="phone_number" type="text" name="phone_number" placeholder="Phone Number">
+									</div>
+								
+								
+								</div>
+								<div id="email-container">
+									<input id="email" type="text" name="email" placeholder="Email">
+								</div>
+									 
+							</div>
+							<div id="message-container">
+							
+							<textarea id="message" name="message" placeholder="Message..."></textarea>
+						
+							</div>
+							<center><input id="form-submit" type="submit"></center>
+					
+						
+						
+					</form>
+				</article>
+				
+				
+				
+				
+				
+			</div>
+		</main>
+		
+		<footer><!--add django-->
+			<center>
+				<span>
+					
+						<a>Contact</a>
+						<a>Contact</a>
+						<a>Contact</a>
+					
+					
+
+				</span>
+			</center>
+		</footer>
+		
+		
+	</body>
+</html>

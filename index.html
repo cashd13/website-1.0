@@ -1,58 +1,9 @@
-<!doctype html>
-<html>
-	<noscript>
-		<link href="CSS/java-disabled.css" type="text/css" rel="stylesheet">
-	</noscript>
-	<head>
-		 <meta charset="utf-8">
-		 <meta name="viewport" content="width=device-width, initial-scale=1">
-		 <title>Responsive practice</title>
-		 <link href="CSS/responsive.css" rel="stylesheet" type="text/css">
-		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</head>
-
-	<body>
-	
-		<header>
-			
-			
-			<div id="logo">
-				<h1>Logo</h1>
-			</div>
-			
-			<div class="nav-container">
-				<nav>
-					<a class="active" href="index.html">Home</a> <span class="bar">|</span> 
-					<a href="gallery.html">Gallery</a> <span class="bar">|</span>
-					<a href="services.html">Services</a> <span class="bar">|</span>
-					<a href="contact.html">Contact</a>
-				</nav>
-				
-			</div>
-			
-				
-			<div id="dropdown-button-container">
-				<button id="dropdown-button" type="button"></button>
-				<!--<img id="menu-icon" src="ASSETS/menu-icon.png">-->
-			</div>
-			
-			
-		
-			
-			<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-					integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-					crossorigin="anonymous">
-			</script> 
-
-			<script src='Javascript/main.js'></script> 
-		</header>
-		
-		
+{% extends 'static/skeleton.html' %}
+{% load staticfiles %}
+	{% block content %}
 		<main>
 			<article id="background_image">
-				<img src="ASSETS/background.jpg">
+				<img src="/static/ASSETS/background.jpg">
 			</article>
 			<div id="content">
 				<article id="bio" class="has_2_col">
@@ -60,7 +11,7 @@
 						<h1 id="smaller_show">I am Fran</h1>
 					</center><!--shows above headshot when screen size less than 620px-->
 					<section class="two_col_1">
-						<img id="headshot" src="ASSETS/Fran headshot ellipse.png">
+						<img id="headshot" src="/static/ASSETS/Fran headshot ellipse.png">
 					</section>
 					<section class="two_col_2">
 						<h1 id="smaller_hide">I am Fran</h1>
@@ -118,15 +69,15 @@
 						<div class="carousel-inner">
 					
 						  <div class="item active">
-							<img src="ASSETS/background.jpg" alt="Los Angeles" style="width:100%; ">
+							<img src="/static/ASSETS/background.jpg" alt="Los Angeles" style="width:100%; ">
 						  </div>
 
 						  <div class="item">
-							<img src="ASSETS/background.jpg" alt="Chicago" style="width:100%;">
+							<img src="/static/ASSETS/background.jpg" alt="Chicago" style="width:100%;">
 						  </div>
 						
 						  <div class="item">
-							<img src="ASSETS/background.jpg" alt="New york" style="width:100%;">
+							<img src="/static/ASSETS/background.jpg" alt="New york" style="width:100%;">
 						  </div>
 					  
 						</div>
@@ -155,7 +106,7 @@
 							<div class="review-information">
 								<center>
 									<div class="review-picture">
-										<img src="ASSETS/review-headshot.gif.gif"/>
+										<img src="/static/ASSETS/review-headshot.gif.gif"/>
 									</div>
 								</center>
 								<h6 class="review-name">
@@ -179,7 +130,7 @@
 							<div class="review-information">
 								<center>
 									<div class="review-picture">
-										<img src="ASSETS/review-headshot.gif.gif"/>
+										<img src="/static/ASSETS/review-headshot.gif.gif"/>
 									</div>
 								</center>
 
@@ -202,7 +153,7 @@
 							<div class="review-information">
 								<center>
 									<div class="review-picture">
-										<img src="ASSETS/review-headshot.gif.gif"/>
+										<img src="/static/ASSETS/review-headshot.gif.gif"/>
 									</div>
 								</center>
 
@@ -232,23 +183,8 @@
 					</center>
 				</article>
 				<article id="badges">
-					<img src="ASSETS/badge_display_temp.gif">
+					<img src="/static/ASSETS/badge_display_temp.gif">
 				</article>
 			</div>
 		</main>
-		
-		<footer>
-			<center>
-				<span>
-					
-						<a>Contact</a>
-						<a>Contact</a>
-						<a>Contact</a>
-					
-					
-
-				</span>
-			</center>
-		</footer>
-	</body>
-</html>
+	{% endblock %}

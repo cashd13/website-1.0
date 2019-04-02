@@ -19,7 +19,7 @@ html h1{
 	font-size: 47px;
 	margin-top: 0px;
 	margin-bottom: 25px;
-	color: deeppink;
+	color: (255,255,239,1);
 	
 }
 
@@ -45,8 +45,8 @@ header{
 	height: 100px;
 	position: fixed;
 	width: 100%;
-	background-color:rgba(0,0,0,0.92);/*------------------------------------------Color 1-----------------------------*/
-	/*box-shadow: 0px 0px 10px 2px black;*/ 
+	background-color:rgba(255,255,255);/*------------------------------------------Color 1-----------------------------*/
+
 	padding-left: 3%;
 	padding-right: 3%;
 	padding-bottom:25px;
@@ -78,7 +78,8 @@ div.nav-container{
 	height:40px;
 }
 .active{
-	text-decoration:underline;
+	
+	font-weight:bold;
 }
 nav{
 	height:100%;

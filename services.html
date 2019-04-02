@@ -1,54 +1,6 @@
-<!doctype html>
-<html>
-
-<noscript>
-		<link href="/static/CSS/java-disabled.css" type="text/css" rel="stylesheet">
-	</noscript>
-	<head>
-		 <meta charset="utf-8">
-		 <meta name="viewport" content="width=device-width, initial-scale=1">
-		 <title>Responsive practice</title>
-		 <link href="CSS/responsive.css" rel="stylesheet" type="text/css">
-		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</head>
-	
-	<body>
-	
-		<header>
-			
-			
-			<div id="logo">
-				<h1>Logo</h1>
-			</div>
-			
-			<div class="nav-container">
-				<nav>
-					<a href="index.html">Home</a> <span class="bar">|</span> 
-					<a href="gallery.html">Gallery</a> <span class="bar">|</span>
-					<a class="active" href="services.html">Services</a> <span class="bar">|</span>
-					<a href="contact.html">Contact</a>
-				</nav>
-				
-			</div>
-			
-				
-			<div id="dropdown-button-container">
-				<button id="dropdown-button" type="button"></button>
-			</div>
-			
-			
-		
-			
-			<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-					integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-					crossorigin="anonymous">
-			</script> 
-
-			<script src='/static/Javascript/main.js'></script> 
-		</header>
-		
+{% extends 'static/skeleton.html' %}
+{% load staticfiles %}
+	{% block content %}
 		<main>
 			<div id="content">
 				<article id="bio" class="has_2_col">
@@ -60,7 +12,7 @@
 					
 					<section class="two_col_1">
 					
-						<img src="ASSETS/services/makeup.jpg">
+						<img src="/static/ASSETS/services/makeup.jpg">
 						<center><h2 class="services" id="makeup">Makeup Services</h2></center>
 						<p>
 							In this example each column spans two units, making things a
@@ -77,7 +29,7 @@
 					
 					<section class="two_col_2">
 						
-						<img src="ASSETS/services/lash-extention.jpg">
+						<img src="/static/ASSETS/services/lash-extention.jpg">
 						<center><h2 class="services" id="lash-extention">Lash Extention Services</h2></center>
 						<p>
 							In this example each column spans two units, making things a
@@ -109,21 +61,4 @@
 				
 			</div>
 		</main>
-		
-		<footer>
-			<center>
-				<span>
-					
-						<a>Contact</a>
-						<a>Contact</a>
-						<a>Contact</a>
-					
-					
-
-				</span>
-			</center>
-		</footer>
-		
-		
-	</body>
-</html>
+{% endblock %}

@@ -356,16 +356,16 @@ footer a{
 	width:100%;
 	
 }
-input#name{
+input#id_client_name{
 	float:left;
 	width:98%;
 }
-input#phone_number{
+input#id_client_number{
 	float:right;
 	width:98%;
 	
 }
-input#email{
+input#id_client_email{
 	width:100%;
 	
 }

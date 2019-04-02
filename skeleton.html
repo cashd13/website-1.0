@@ -30,6 +30,7 @@
 				<nav>
 					<a href="{% url 'home' %}">Home</a> <span class="bar">|</span> 
 					<a href="{% url 'gallery' %}">Gallery</a> <span class="bar">|</span>
+					<a href="{% url 'services' %}'">Services</a><span class="bar">|</span>
 					<a href="{% url 'contact' %}">Contact</a>
 				</nav>
 			</div>
@@ -52,8 +53,8 @@
 		<footer>
 			<center>
 				<span>	
-						<a href="{% url 'contact' %}">View Services</a><!--add services link-->
-						<a href="{% url 'contact' %}">Back to Top</a><!--add a link to the page user is currently on-->
+						<a href="{% url 'services' %}">View Services</a>
+						<a href="#" onclick="window.scrollTo(0,0)">Back to Top</a>
 						<a href="{% url 'contact' %}">Contact</a>
 				</span>
 			</center>
